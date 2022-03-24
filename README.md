@@ -1,2 +1,2 @@
 # todo-django
-todo-django
+todo-djangog
