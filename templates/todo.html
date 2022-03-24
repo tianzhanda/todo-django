@@ -1,0 +1,89 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>todo</title>
+    <link rel="icon" type="image/x-icon" href="{% static 'img/icon.ico' %}"/>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/01.css' %}">
+</head>
+<body>
+    <div class="web_bg" style="background-image: url({% static 'img/backGround.jpg' %})"></div>
+    <div class="container">
+        <!-- top nav    start-->
+        <div class="nav">
+            <div class="topNav">
+                <form id="form" action='javascript:postaction()' method='post'>
+                    <input style="text-align: center;" name="todoList" id="inputTodo" placeholder="请输入待办事项" required="required" autocomplete="off">  
+                </form>
+            </div>
+        </div>
+        <!-- top nav   end -->
+        <!-- dateTime -->
+        <div class="dateTime">
+            <div class="date"> 
+                <!-- 动态添加 -->
+                <!-- <li>3hsjhdjshdjhdjskas</li> --> 
+                <div>
+                    <button class="leftButton" onclick="javascript:getDateStr(-1)">前一天</button>    
+                </div>
+                <div>
+                    <p id="dateTime" class="dateTitle"></p>
+                </div>
+                <div>
+                    <button class="rightButton" onclick="javascript:getDateStr(1)">后一天</button>
+                </div>    
+            </div>           
+        </div>
+        <!-- dateTime end -->
+        <!-- todo list   start -->
+        <div class="todo">
+            <div class="lists">
+                <div class="todoNav" id="todoNav">
+                    <span class="title1">待办事项</span>
+                    <span class="todoCount" id="todoCount">0</span>
+                </div>
+                <div class="todoList">
+                    <ul id="todoList">
+                        <!-- 动态添加li -->
+                        <!-- <li><input type="checkbox" name="" checked="checked">事项内容<span>-</span></li> -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- todo list   end -->
+        <!-- done list start -->
+        <div class="done">
+            <div class="lists1">
+                <div class="doneNav">
+                    <span class="title2">已经完成</span>
+                    <span class="doneCount" id="doneCount">0</span>
+                </div>
+                <div class="doneList">
+                    <ul id="doneList">
+                        <!-- 动态添加li -->
+                        <!-- <li>3hsjhdjshdjhdjskas</li> -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- done list end -->
+        <!-- history -->
+        <div class="history">
+            <div class="historyTitle">  
+                <a href="history.html">更多记录</a>        
+            </div>           
+        </div>
+        <!-- history end -->
+        <!-- siteFoot -->
+        <div class="siteFoot">
+            <div class="foot">
+                <p>Copyright © 2022 mytodolist.com.cn <a style="color: #000000;" href="javascript:clear();">清除记录</a></p>
+                <p><a style="color: #8c9796;" href="https://tsm.miit.gov.cn/dxxzsp/">蜀ICP备案2022004224号</a></p>
+            </div>
+        </div>
+        <!-- siteFoot end -->
+    </div>
+</body>
+<script type="text/javascript" src="{% static 'js/01.js' %}" charset="UTF-8"></script>
+</html>
