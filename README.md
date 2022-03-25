@@ -12,9 +12,7 @@
 
 1、主界面
 
-<img src="I:\Desktop\todo说明1.png" alt="todo说明1" style="zoom:50%;" />
+![todo说明1](https://user-images.githubusercontent.com/85002033/160125918-8e9167ad-a4a0-4636-91bd-0cae67ca8028.png)
 
 2、历史记录界面
-
-<img src="I:\Desktop\todo说明2.png" alt="todo说明2" style="zoom:75%;" />
-
+![todo说明2](https://user-images.githubusercontent.com/85002033/160125979-64bb3d49-50b9-4229-8ff4-a087d66e7e84.png)
